@@ -1,0 +1,8 @@
+User-agent: *
+User-agent: Mediapartners-Google
+
+Sitemap: https://tunnle-rush-unblocked.github.io/sitemap.xml
+
+Disallow: /footer.html
+Disallow: /header.html
+Disallow: /frame.html

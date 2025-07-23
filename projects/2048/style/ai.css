@@ -1,0 +1,76 @@
+.controls {
+    margin-top: 1em;
+    padding: 0.5em 0;
+    overflow: auto;
+  }
+  
+  .controls button {
+    /*display: inline-block;*/
+    background: #8f7a66;
+    border: 0;
+    border-radius: 3px;
+    padding: 0 20px;
+    color: #f9f6f2;
+    height: 40px;
+    line-height: 42px;
+    font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .controls button:hover {
+      background: #ad957f;
+  } 
+  
+  .ai-button, #feedback-container {
+    line-height: 40px;
+    font-size: 36px;
+  }
+  
+  #run-button-container {
+    float: right;
+  }
+  
+  #hint-button-container, #feedback-container {
+    float: left;
+  }
+  
+  #feedback-container {
+    background: #8f7a66;
+    color: #f9f6f2;
+    margin-left: 1em;
+    font-weight: bold;
+  }  
+  .last-section {
+  width: 100%;
+  max-width: 1140px; /* Matches Bootstrap's container max-width for large screens */
+  margin-right: auto; 
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding: 2rem;
+  
+} 
+/*  shadow code is start from here */
+.container.last-section {
+  background-color: #f2f2f21a;
+  color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.397); /* soft white shadow for dark bg */
+  max-width: 1000px;
+  margin: 0px auto;
+  line-height: 1.7;
+  font-family: Arial, sans-serif;
+}
+.container.last-section h2 {
+  color: #e0e0e0;
+}
+.container.last-section a {
+  color: #ff4c4c;
+  text-decoration: none;
+}
+.container.last-section a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Terms of Service | Only Games</title>
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      overflow-x: hidden;
+      background-color: #0f0f0f;
+      color: #fff;
+    }
+
+    body {
+      padding-top: 60px;
+    }
+
+    .navbar {
+      background-color: #333333;
+      color: white;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      white-space: nowrap;
+      overflow: visible;
+    }
+
+    .navbar-container {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 0 24px;
+      height: 60px;
+      flex-wrap: nowrap;
+      width: 100%;
+    }
+
+    .nav-left,
+    .nav-middle {
+      display: flex;
+      align-items: center;
+      flex-wrap: nowrap;
+    }
+
+    .nav-left {
+      margin-right: 20px;
+    }
+
+    .nav-left a {
+      background: none;
+      border: none;
+      color: white;
+      margin-right: 10px;
+      padding: 8px 16px;
+      border-radius: 8px;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .nav-left .active {
+      background-color: #c0392b;
+    }
+
+    .nav-middle a {
+      color: white;
+      text-decoration: none;
+      font-weight: 400;
+      font-size: 17px;
+      letter-spacing: 1px;
+      padding: 8px;
+      position: relative;
+    }
+
+    .nav-middle a:hover {
+      background-color: #c9c9c9;
+      color: black;
+      border-radius: 8px;
+    }
+
+    .retro {
+      background-color: #c0392b !important; 
+    }
+    .retro:hover{
+      background-color: #c9c9c9 !important;
+    }
+    .flash {
+      background-color: #c0392b !important;
+    }
+    .flash:hover{
+      background-color: #c9c9c9 !important;
+    }
+    .games {
+      background-color: #c0392b;
+    }
+
+    .games:hover {
+      background-color: #c9c9c9 !important;
+    }
+
+    /* Dropdown Menu */
+    .dropdown {
+      position: relative;
+    }
+
+    .dropdown-menu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #333333;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+      z-index: 1001;
+      white-space: nowrap;
+      padding: 15px 10px;
+      min-width: 160px;
+      max-height: unset;
+      overflow: visible;
+    }
+
+    .dropdown:hover .dropdown-menu {
+      display: block;
+    }
+
+    .dropdown-menu a {
+      display: block;
+      padding: 10px 15px;
+      color: white;
+      font-size: 13px;
+      text-decoration: none;
+    }
+
+    .navbar-oneline{
+      display: flex !important;
+    }
+
+    .dropdown-menu a:hover {
+      background-color: #c0392b !important;
+      color: white;
+    }
+
+    /* Content Styles */
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    h1, h2 {
+      color: #a83234;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+    }
+
+    h2 {
+      margin-top: 30px;
+      font-size: 1.8rem;
+    }
+
+    p, ul {
+      color: #f0f0f0;
+      line-height: 1.6;
+    }
+
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    ul li {
+      margin: 10px 0;
+    }
+
+    a {
+      color: #a83234;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Footer Styles */
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 40px 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .footer-content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 15px;
+    }
+
+    .footer-section {
+      flex: 1;
+      min-width: 250px;
+      margin-bottom: 20px;
+      padding: 0 15px;
+    }
+
+    .footer-section h3 {
+      color: #fff;
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+
+    .footer-section p {
+      color: #ccc;
+      line-height: 1.5;
+      margin: 0;
+    }
+
+    .footer-section ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .footer-section li {
+      margin-bottom: 8px;
+    }
+
+    .copyright {
+      text-align: center;
+      margin-top: 30px;
+      padding-top: 20px;
+      border-top: 1px solid #555;
+      color: #ccc;
+    }
+
+    .footer-section a:hover {
+      color: #f75f5f;
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .navbar-container {
+        flex-wrap: wrap;
+      }
+    }
+    .navbar .navbar-container {
+          justify-content: center;
+        }
+        .last-section {
+  width: 100%;
+  max-width: 1140px; /* Matches Bootstrap's container max-width for large screens */
+  margin-right: auto; 
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding: 2rem;
+  
+} 
+/*  shadow code is start from here */
+.container.last-section {
+  background-color: #f2f2f21a;
+  color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.397); /* soft white shadow for dark bg */
+  max-width: 1000px;
+  margin: 0px auto;
+  line-height: 1.7;
+  font-family: Arial, sans-serif;
+}
+.container.last-section h2 {
+  color: #e0e0e0;
+}
+.container.last-section a {
+  color: #ff4c4c;
+  text-decoration: none;
+}
+.container.last-section a:hover {
+  text-decoration: underline;
+}
+  </style>
+</head>
+<body>
+   <!-- Navbar -->
+    <div id="navbar-placeholder"></div>
+    <script>
+      fetch('header.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('navbar-placeholder').innerHTML = data;
+          function updateClock() {
+            const now = new Date();
+            const clock = document.getElementById('clock');
+            if (clock) clock.textContent = now.toLocaleTimeString();
+          }
+          setInterval(updateClock, 1000);
+          updateClock();
+        });
+    </script>
+  <!-- Content -->
+  <div class="container">
+    <h1>Terms of Service</h1>
+    
+    <h2>1. Acceptance of Terms</h2>
+    <p>Using <a href="https://tunnle-rush-unblocked.github.io/">Only Games</a>, or playing video games on it, means you fully acknowledge, agree, and confirm that you have read all the provided terms and conditions without any objection.</p>
+    <p>It is important to review this page regularly when using our website, as the terms and conditions may be updated from time to time. Checking this page frequently will help you stay informed about any changes.</p>
+    
+    <h2>Third-Party Links</h2>
+    <p>Our website may include links to external websites or services that are not owned or controlled by Only Games. We do not assume responsibility for the content, <a href="https://tunnle-rush-unblocked.github.io/privacy-policy.html">privacy policy</a>, or practices of any third-party websites. Visiting these sites is at your own risk.</p>
+
+    <h2>Limitation of Liability</h2>
+    <p>Only Games is provided "as is" without warranties of any kind, either express or implied. While we strive to provide a smooth gaming experience, we do not guarantee uninterrupted access, error-free content, or that the website is free from harmful components.</p>
+    <p>In no event shall Only Games or its team be held liable for any direct, indirect, incidental, or consequential damages arising from the use or inability to use this website.</p>
+
+    <h2>Changes to These Terms</h2>
+    <p>Only Games reserves the right to update or change these Terms and Conditions at any time without prior notice. It is your responsibility to check this page regularly to stay informed of any updates. Continued use of the website after changes are made will be deemed as your acceptance of those changes.</p>
+    
+    <h2>Contact Us</h2>
+    <p>If you have any questions about these Terms and Conditions, please contact us at:</p> 
+    <p>alivlogs31eb@gmail.com</p>
+  </div>
+
+ <section style="background-color: #1c1c1d; padding: 70px 0px; ">
+      <div class="container last-section">
+        <h2>Wanna Play Your Favorite Games Without Any Distraction?</h2>
+        <p><a href="https://tunnle-rush-unblocked.github.io/" style="color: #a83234;">Only Games</a> is the perfect spot. This platform is designed to give you seamless, ad-free gaming experiences that don’t require any downloads. No matter if you’re on a school network, a Chromebook, or even at work, Only Games makes sure you can enjoy the best Unblocked Games hassle-free. You can get instant access to fun with Unblocked Games 6x, no matter where you are!</p>
+    
+        <h2>Why Play on Only-Games?</h2>
+        <p>✅ <b>No Downloads Required</b>– Just click and play instantly in your browser.</p>
+        <p>🎮 <b>Handpicked Titles</b>– We feature only games that are tested, safe, and fun.</p>
+        <p>🌐 <b>Accessible Anywhere</b>–  Play from your phone, tablet, or PC.</p>
+        <p>🔄 <b>New Games Weekly </b>–  We keep things fresh with regular updates.</p>
+        <h2>Top 5 Unblocked Games on Only Games</h2>
+       <p><strong><a href="https://tunnle-rush-unblocked.github.io/projects/1v1.lol/index.html" style="color: #a83234;">1v1 Lol</a></strong>: Play 1v1.lol unblocked the online building simulator & third person shooting game at Only Games. 1v1.lol is a competitive online third-person shooter that challenges players to strategically build structures while navigating the map.</p>
+              <p><strong><a href="https://tunnle-rush-unblocked.github.io/projects/2048/index.html" style="color: #a83234;">2048</a></strong>: Play 2048 online join the tiles and reach 2048 number. Even if you don't love numbers you will love this classic game. </p>
+          <p><strong><a href="https://tunnle-rush-unblocked.github.io/projects/ducklife4/index.html" style="color: #a83234;">Duck Life 4</a></strong>: Duck Life 4 is one of the latest and most entertaining entries in the series. Train your duck, feed it, and collect accessories to help it reach its full potential.</p>
+         <p><strong><a href="https://tunnle-rush-unblocked.github.io/projects/flappy-bird/index.html" style="color: #a83234;">Flappy Bird</a></strong>: The game is a side-scrolling adventure where the player guides a bird named Faby, navigating through gaps between green pipes while avoiding collisions.</p>
+         <p><strong><a href="https://tunnle-rush-unblocked.github.io/projects/core-ball/index.html" style="color: #a83234;">Core Ball</a></strong>:  Coreball Game – The objective is simple: throw your ball at the core without hitting any of the other balls already attached to it.</p>
+    
+      </div>
+    </section>
+    <script>
+      // footer-loader.js
+      document.addEventListener('DOMContentLoaded', function() {
+          // Create a container for the footer
+          const footerContainer = document.createElement('div');
+          footerContainer.id = 'footer-container';
+          document.body.appendChild(footerContainer);
+          
+          // Load the footer content
+          fetch('footer.html')
+          .then(response => {
+              if (!response.ok) {
+                  throw new Error('Network response was not ok');
+              }
+              return response.text();
+          })
+          .then(data => {
+              footerContainer.innerHTML = data;
+          })
+              .catch(error => {
+                  console.error('Error loading footer:', error);
+                  // Fallback content if footer fails to load
+                  footerContainer.innerHTML = `
+                      <footer style="background-color: #333; color: #fff; padding: 20px; text-align: center;">
+                          <p>© ${new Date().getFullYear()} onlygames. All rights reserved.</p>
+      
+                      </footer>
+                  `;
+              });
+      });
+    </script>
+</body>
+</html>

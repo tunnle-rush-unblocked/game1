@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DMCA - Only Games</title>
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      overflow-x: hidden;
+      background-color: #0f0f0f;
+      color: #fff;
+    }
+
+    body {
+      padding-top: 60px;
+    }
+
+    a {
+      color: #a83234;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .navbar {
+      background-color: #333333;
+      color: white;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+
+    .navbar-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 24px;
+      height: 60px;
+      flex-wrap: nowrap;
+      width: 100%;
+    }
+
+    .nav-left {
+      display: flex;
+      align-items: center;
+    }
+
+    .nav-left a {
+      color: white;
+      text-decoration: none;
+      padding: 8px 16px;
+      margin-right: 10px;
+      border-radius: 8px;
+    }
+
+    .nav-middle {
+      display: flex;
+      align-items: center;
+      position: relative;
+    }
+
+    .nav-middle > a {
+      color: white;
+      text-decoration: none;
+      padding: 8px 12px;
+      margin: 0 4px;
+      border-radius: 8px;
+      white-space: nowrap;
+    }
+
+    .nav-left .active,
+    .nav-left a:hover,
+    .nav-middle > a:hover {
+      background-color: #c0392b;
+    }
+
+    .games:hover,
+    .retro:hover,
+    .flash:hover {
+      background-color: #c9c9c9 !important;
+    }
+
+    /* Improved Dropdown Styles */
+    .dropdown {
+      position: relative;
+      margin-left: 8px; /* Added spacing before dropdown */
+    }
+
+    .dropdown > a {
+      padding-right: 20px; /* Space for dropdown arrow */
+      position: relative;
+    }
+
+    .dropdown > a::after {
+      content: "▾";
+      position: absolute;
+      right: 8px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .dropdown-menu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #333333;
+      border-radius: 8px;
+      padding: 10px 0;
+      min-width: 180px;
+      z-index: 1002; /* Higher than other elements */
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    }
+
+    .dropdown:hover .dropdown-menu {
+      display: block;
+    }
+
+    .dropdown-menu a {
+      display: block;
+      color: white;
+      padding: 8px 16px;
+      font-size: 14px;
+      margin: 0;
+      white-space: nowrap;
+    }
+
+    .dropdown-menu a:hover {
+      background-color: #c0392b;
+    }
+
+    /* Prevent ALT Links and More from overlapping */
+    .nav-middle > a[href*="docs.google.com"] {
+      margin-right: 12px; /* Extra space after ALT Links */
+      position: relative;
+      z-index: 1;
+    }
+
+    .content-wrapper {
+      max-width: 900px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    h2, h3 {
+      color: #ffffff;
+    }
+
+    p {
+      line-height: 1.7;
+      color: #ddd;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 40px 0;
+    }
+
+    footer a {
+      color: #a83234;
+    }
+
+    footer a:hover {
+      color: #f75f5f;
+      text-decoration: underline;
+    }
+
+    @media (max-width: 1200px) {
+      .nav-middle {
+        overflow-x: auto;
+        padding-bottom: 5px;
+      }
+      .nav-middle::-webkit-scrollbar {
+        height: 4px;
+      }
+      .nav-middle::-webkit-scrollbar-thumb {
+        background: #a83234;
+        border-radius: 2px;
+      }
+    }
+           .last-section {
+  width: 100%;
+  max-width: 1140px; /* Matches Bootstrap's container max-width for large screens */
+  margin-right: auto; 
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding: 2rem;
+  
+} 
+/*  shadow code is start from here */
+.container.last-section {
+  background-color: #f2f2f21a;
+  color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.397); /* soft white shadow for dark bg */
+  max-width: 1000px;
+  margin: 0px auto;
+  line-height: 1.7;
+  font-family: Arial, sans-serif;
+}
+.container.last-section h2 {
+  color: #e0e0e0;
+}
+.container.last-section a {
+  color: #ff4c4c;
+  text-decoration: none;
+}
+.container.last-section a:hover {
+  text-decoration: underline;
+}
+footer .container{
+    background-color: #333;
+    border-radius: 0px;
+    box-shadow: unset;
+}
+.navbar .navbar-container {
+    justify-content: center;
+}
+  </style>
+</head>
+<body>
+
+   <!-- Navbar -->
+    <div id="navbar-placeholder"></div>
+    <script>
+      fetch('header.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('navbar-placeholder').innerHTML = data;
+          function updateClock() {
+            const now = new Date();
+            const clock = document.getElementById('clock');
+            if (clock) clock.textContent = now.toLocaleTimeString();
+          }
+          setInterval(updateClock, 1000);
+          updateClock();
+        });
+    </script>
+
+  <!-- Content -->
+  <div class="content-wrapper">
+    <h2><strong>DMCA Copyright Infringement Notice</strong></h2>
+    <p><strong>Effective Date:</strong> 04/09/2025</p>
+
+    <p><strong>Only-Games.Github.io</strong> ("the Site") complies with the Digital Millennium Copyright Act (DMCA) (17 U.S.C. § 512). If you believe your copyrighted work has been used or distributed on this Site without authorization, you may submit a formal DMCA takedown request.</p>
+
+    <h3>Requirements for a Valid DMCA Notice</h3>
+
+    <p><strong>1. Identification of the Copyrighted Work</strong><br>
+    - Provide the title, author, and (if applicable) registration number of the work.<br>
+    - For multiple works, a representative list is acceptable.</p>
+
+    <p><strong>2. Location of Infringing Material</strong><br>
+    - Exact URL(s) where the infringing content appears.<br>
+    - Screenshots or clear descriptions may help.</p>
+
+    <p><strong>3. Your Contact Information</strong><br>
+    - Full legal name, mailing address, phone number, and email.<br>
+    - If acting on behalf of a company, include your affiliation.</p>
+
+    <p><strong>4. Good Faith Statement</strong><br>
+    Include: <em>"I have a good faith belief that the use of the material is not authorized by the copyright owner, its agent, or the law."</em></p>
+
+    <p><strong>5. Accuracy & Authority Statement</strong><br>
+    Include: <em>"I swear, under penalty of perjury, that the information in this notice is accurate and that I am the copyright owner or authorized to act on behalf of the owner."</em></p>
+
+    <p><strong>6. Electronic Signature</strong><br>
+    - Typed full name or digital signature.</p>
+
+    <hr style="border: 0; border-top: 1px solid #444; margin: 40px 0;" />
+
+    <h3>Where to Send Your DMCA Notice</h3>
+    <p>Email your completed notice to our Designated Agent:<br>
+    📧 <a href="mailto:alivlogs31eb@gmail.com">alivlogs31eb@gmail.com</a></p>
+
+    <hr style="border: 0; border-top: 1px solid #444; margin: 40px 0;" />
+
+    <p><strong>Note:</strong><br>
+    Misrepresentations in a DMCA claim may result in legal liability (see 17 U.S.C. § 512(f)).<br>
+    Counter-notices may be submitted if content was removed in error.</p>
+  </div>
+
+ <section style="background-color: #1c1c1d; padding: 70px 0px; ">
+      <div class="container last-section">
+        <h2>Wanna Play Your Favorite Games Without Any Distraction?</h2>
+        <p><a href="https://tunnle-rush-unblocked.github.io/" style="color: #a83234;">Only Games</a> is the perfect spot. This platform is designed to give you seamless, ad-free gaming experiences that don’t require any downloads. No matter if you’re on a school network, a Chromebook, or even at work, Only Games makes sure you can enjoy the best Unblocked Games hassle-free. You can get instant access to fun with Unblocked Games 6x, no matter where you are!</p>
+    
+        <h2>Why Play on Only-Games?</h2>
+        <p>✅ <b>No Downloads Required</b>– Just click and play instantly in your browser.</p>
+        <p>🎮 <b>Handpicked Titles</b>– We feature only games that are tested, safe, and fun.</p>
+        <p>🌐 <b>Accessible Anywhere</b>–  Play from your phone, tablet, or PC.</p>
+        <p>🔄 <b>New Games Weekly </b>–  We keep things fresh with regular updates.</p>
+        <h2>Top 5 Unblocked Games on Only Games</h2>
+       <p><strong><a href="https://tunnle-rush-unblocked.github.io/projects/1v1.lol/index.html" style="color: #a83234;">1v1 Lol</a></strong>: Play 1v1.lol unblocked the online building simulator & third person shooting game at Only Games. 1v1.lol is a competitive online third-person shooter that challenges players to strategically build structures while navigating the map.</p>
+              <p><strong><a href="https://tunnle-rush-unblocked.github.io/projects/2048/index.html" style="color: #a83234;">2048</a></strong>: Play 2048 online join the tiles and reach 2048 number. Even if you don't love numbers you will love this classic game. </p>
+          <p><strong><a href="https://tunnle-rush-unblocked.github.io/projects/ducklife4/index.html" style="color: #a83234;">Duck Life 4</a></strong>: Duck Life 4 is one of the latest and most entertaining entries in the series. Train your duck, feed it, and collect accessories to help it reach its full potential.</p>
+         <p><strong><a href="https://tunnle-rush-unblocked.github.io/projects/flappy-bird/index.html" style="color: #a83234;">Flappy Bird</a></strong>: The game is a side-scrolling adventure where the player guides a bird named Faby, navigating through gaps between green pipes while avoiding collisions.</p>
+         <p><strong><a href="https://tunnle-rush-unblocked.github.io/projects/core-ball/index.html" style="color: #a83234;">Core Ball</a></strong>:  Coreball Game – The objective is simple: throw your ball at the core without hitting any of the other balls already attached to it.</p>
+    
+      </div>
+    </section>
+    <script>
+      // footer-loader.js
+      document.addEventListener('DOMContentLoaded', function() {
+          // Create a container for the footer
+          const footerContainer = document.createElement('div');
+          footerContainer.id = 'footer-container';
+          document.body.appendChild(footerContainer);
+          
+          // Load the footer content
+          fetch('footer.html')
+          .then(response => {
+              if (!response.ok) {
+                  throw new Error('Network response was not ok');
+              }
+              return response.text();
+          })
+          .then(data => {
+              footerContainer.innerHTML = data;
+          })
+              .catch(error => {
+                  console.error('Error loading footer:', error);
+                  // Fallback content if footer fails to load
+                  footerContainer.innerHTML = `
+                      <footer style="background-color: #333; color: #fff; padding: 20px; text-align: center;">
+                          <p>© ${new Date().getFullYear()} onlygames. All rights reserved.</p>
+      
+                      </footer>
+                  `;
+              });
+      });
+    </script>
+</body>
+</html>

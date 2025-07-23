@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PGT67HE6EE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-R1ZCLH6XCR');
+</script>
+        <meta charset="utf-8" />
+        <title>2048 Game | Play 2048 Online At Only Games</title>
+	<meta name="description" content="Play 2048 game here, Join the tiles and reach 2048! This is an easy and fun puzzle game. "> 
+	<meta name="keywords" content="2048 game, play 2048 online, puzzle game, only games, number game, github.io games, unblocked games, brain games">
+        <link rel="canonical" href="https://tunnle-rush-unblocked.github.io/projects/2048/index.html" />
+	<meta name="robots" content="index, follow">
+
+        <link href="style/main.css" rel="stylesheet" type="text/css" />
+        <link href="style/ai.css" rel="stylesheet" type="text/css" />
+        <link rel="shortcut icon" href="favicon.ico" />
+        <meta name="HandheldFriendly" content="True" />
+        <meta name="MobileOptimized" content="320" />
+        <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no" />
+        <meta property="og:title" content="2048 game" />
+        <meta property="og:site_name" content="2048 game" />
+        <meta property="og:description" content="Join the numbers and get to the 2048 tile! Careful: this game is extremely addictive!" />
+        <meta property="og:image" content="meta/og_image.png" />
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "rojs7of1hu");
+</script>
+  </head>
+    <body>
+	    <!-- Load the GPT library asynchronously -->
+<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+
+<!-- Ad container -->
+<div id="970x250-1"></div>
+
+<!-- Define and display the ad slot -->
+<script>
+  window.googletag = window.googletag || { cmd: [] };
+
+  googletag.cmd.push(function () {
+    googletag.defineSlot(
+      '/21849154601,23300816471/Ad.Plus-970x250', // Ad unit path
+      [970, 250],                                 // Ad size
+      '970x250-1'                                 // ID of the ad container div
+    ).addService(googletag.pubads());
+
+    googletag.enableServices();
+    googletag.display('970x250-1');
+  });
+</script>
+        <div class="container">
+            <div class="heading">
+                <h1 class="title">2048</h1>
+                <div class="score-container">0</div>
+            </div>
+            <p class="game-intro">Join the numbers and get to the <strong>2048 tile!</strong></p>
+            <div class="controls">
+                <div id="hint-button-container">
+                    <button id="hint-button" class="ai-button">Get Hint</button>
+                </div>
+                <div id="feedback-container"></div>
+                <div id="run-button-container">
+                    <button id="run-button" class="ai-button">Auto-run</button>
+                </div>
+            </div>
+            <div class="game-container">
+                <div class="game-message">
+                    <p></p>
+                    <div class="lower">
+                        <a class="retry-button">Try again</a>
+                        <div class="score-sharing"></div>
+                    </div>
+                </div>
+                <div class="grid-container">
+                    <div class="grid-row">
+                        <div class="grid-cell"></div>
+                        <div class="grid-cell"></div>
+                        <div class="grid-cell"></div>
+                        <div class="grid-cell"></div>
+                    </div>
+                    <div class="grid-row">
+                        <div class="grid-cell"></div>
+                        <div class="grid-cell"></div>
+                        <div class="grid-cell"></div>
+                        <div class="grid-cell"></div>
+                    </div>
+                    <div class="grid-row">
+                        <div class="grid-cell"></div>
+                        <div class="grid-cell"></div>
+                        <div class="grid-cell"></div>
+                        <div class="grid-cell"></div>
+                    </div>
+                    <div class="grid-row">
+                        <div class="grid-cell"></div>
+                        <div class="grid-cell"></div>
+                        <div class="grid-cell"></div>
+                        <div class="grid-cell"></div>
+                    </div>
+                </div>
+                <div class="tile-container"></div>
+            </div>
+		<!DOCTYPE html>
+<html lang="en">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f5f0;
+        }
+        
+        h1 {
+            color: #5d4037;
+            font-size: 2.2em;
+            border-bottom: 2px solid #d7ccc8;
+            padding-bottom: 10px;
+        }
+        
+        h2 {
+            color: #6d4c41;
+            font-size: 1.8em;
+            margin-top: 30px;
+            border-left: 4px solid #a1887f;
+            padding-left: 10px;
+        }
+        
+        h3 {
+            color: #8d6e63;
+            font-size: 1.4em;
+            margin-top: 25px;
+        }
+        
+        p {
+            margin-bottom: 15px;
+            color: #4e342e;
+        }
+        
+        ul {
+            padding-left: 20px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+        
+        .highlight {
+            background-color: #efebe9;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+    </style>
+<body>
+	  <!-- Navbar -->
+    <div id="navbar-placeholder"></div>
+    <script>
+      fetch('header.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('navbar-placeholder').innerHTML = data;
+          function updateClock() {
+            const now = new Date();
+            const clock = document.getElementById('clock');
+            if (clock) clock.textContent = now.toLocaleTimeString();
+          }
+          setInterval(updateClock, 1000);
+          updateClock();
+        });
+    </script>
+	<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+
+<div id="300x250-1"></div>
+
+<script>
+  window.googletag = window.googletag || { cmd: [] };
+
+  googletag.cmd.push(function () {
+    googletag.defineSlot(
+      '/21849154601,23300816471/Ad.Plus-300x250',
+      [300, 250],
+      '300x250-1'
+    ).addService(googletag.pubads());
+
+    googletag.enableServices();
+    googletag.display('300x250-1');
+  });
+</script>
+    <h1>Best Unblocked Games Like 2048 (Puzzle Games for School)</h1>
+    
+    <p>If you're looking for fun, brain-teasing games similar to 2048 that you can play at school, you're in luck. Many unblocked puzzle games offer the same satisfying number-merging or tile-sliding mechanics while being accessible on school networks. These games provide mental stimulation while staying under the radar of school filters.</p>
+    
+    <h2>Why 2048-Style Games Work Well for School</h2>
+    
+    <h3>Simple Yet Challenging Gameplay</h3>
+    <p>2048 and its alternatives feature straightforward rules but deep strategic possibilities. The simple "slide to combine" mechanic makes them easy to learn during short breaks, while the increasing difficulty provides lasting engagement.</p>
+    
+    <h3>Educational Benefits</h3>
+    <p>These games sharpen cognitive skills like pattern recognition, strategic planning, and basic arithmetic. Unlike action games, they promote logical thinking without flashy graphics or violence that might trigger school filters.</p>
+    
+    <h3>Low-Key and Unblocked</h3>
+    <p>Most 2048-style games run in browsers without downloads or plugins. Their minimalist design and educational nature help them bypass school restrictions where more elaborate games get blocked.</p>
+    
+    <h2>Top 10 Unblocked Games Similar to 2048</h2>
+    
+    <h3>1. Threes! (The Original Inspiration)</h3>
+    <p>The precursor to 2048 offers more polished gameplay where you combine 1+2 to make 3, then match multiples of 3. Its charming animations and tighter mechanics provide a more refined experience.</p>
+    
+    <h3>2. 1024 (Simpler Version)</h3>
+    <p>This streamlined clone lowers the difficulty by capping the target at 1024. Perfect for beginners or quick sessions between classes.</p>
+    
+    <h3>3. 4096 (Harder Challenge)</h3>
+    <p>Doubles down on difficulty by requiring players to reach 4096. Demands more foresight and careful planning for advanced puzzle lovers.</p>
+    
+    <h3>4. 2048 Cupcakes (Sweet Variant)</h3>
+    <p>Replaces numbers with dessert-themed tiles (cupcakes, cakes) while keeping the classic merging gameplay. A fun, lighthearted twist that's equally addictive.</p>
+    
+    <h3>5. Tetris (Timeless Classic)</h3>
+    <p>The iconic block-stacking game shares 2048's easy-to-learn, hard-to-master appeal. Many unblocked versions exist online.</p>
+    
+    <h3>6. Sudoku (Logic Puzzle)</h3>
+    <p>Offers pure number-based deduction without any sliding mechanics. Printable versions make it completely filter-proof.</p>
+    
+    <h3>7. Unblocked Snake (Retro Favorite)</h3>
+    <p>The classic arcade game provides quick, satisfying gameplay sessions. Modern versions often include new power-ups and modes.</p>
+    
+    <h3>8. Minesweeper (Strategic Puzzle)</h3>
+    <p>Tests logical deduction as you uncover safe tiles while avoiding mines. The Windows classic has many browser-based clones.</p>
+    
+    <h3>9. 2048 Fibonacci (Math Twist)</h3>
+    <p>Introduces Fibonacci sequences (1,1,2,3,5,8...) instead of doubling numbers. Adds fresh complexity for math-minded players.</p>
+    
+    <h3>10. Dots and Boxes (Pen-and-Paper Style)</h3>
+    <p>A strategic connection game that works well in both digital and paper formats. Simple rules conceal deep competitive potential.</p>
+    
+    <h2>Where to Find These Unblocked Games</h2>
+    
+    <h3>School-Friendly Gaming Sites</h3>
+    <p>Look for educational gaming portals like Coolmath Games or sites specifically labeled "unblocked." These often host puzzle games that bypass filters.</p>
+    
+    <h3>Browser Extensions</h3>
+    <p>Some lightweight extensions can access game proxies, though check your school's policies first.</p>
+    
+    <h3>Offline Options</h3>
+    <p>Games like Sudoku or Dots and Boxes can be played with just paper and pencil, making them completely unrestricted.</p>
+    
+    <h2>Tips for Playing at School</h2>
+    
+    <h3>Use Discreet Browser Tabs</h3>
+    <p>Keep games in small, minimized windows rather than full screen for quick switching if needed.</p>
+    
+    <h3>Stick to Puzzle Games</h3>
+    <p>Avoid anything with violence or loud sounds that might draw attention.</p>
+    
+    <h3>Time Your Sessions</h3>
+    <p>Play during designated breaks rather than class time to stay on the right side of school rules.</p>
+    
+    <div class="highlight">
+        <p>These 2048 alternatives provide the same satisfying mental workout while being school-appropriate. Whether you prefer number puzzles, strategy games, or classic arcade-style challenges, there's an unblocked option to keep your brain engaged between lessons.</p>
+    </div>
+</body>
+</html>
+        </div>
+
+        <script src="js/animframe_polyfill.js"></script>
+        <script src="js/hammer.min.js"></script>
+        <script src="js/keyboard_input_manager.js"></script>
+        <script src="js/html_actuator.js"></script>
+        <script src="js/grid.js"></script>
+        <script src="js/tile.js"></script>
+        <script src="js/ai.js"></script>
+        <script src="js/game_manager.js"></script>
+        <script src="js/application.js"></script>
+        <script type="application/javascript" src="/js/main.js"></script>
+
+    </body>
+    <script>
+      // footer-loader.js
+      document.addEventListener('DOMContentLoaded', function() {
+          // Create a container for the footer
+          const footerContainer = document.createElement('div');
+          footerContainer.id = 'footer-container';
+          document.body.appendChild(footerContainer);
+          
+          // Load the footer content
+          fetch('footer.html')
+          .then(response => {
+              if (!response.ok) {
+                  throw new Error('Network response was not ok');
+              }
+              return response.text();
+          })
+          .then(data => {
+              footerContainer.innerHTML = data;
+          })
+              .catch(error => {
+                  console.error('Error loading footer:', error);
+                  // Fallback content if footer fails to load
+                  footerContainer.innerHTML = `
+                      <footer style="background-color: #333; color: #fff; padding: 20px; text-align: center;">
+                          <p>© ${new Date().getFullYear()} onlygames. All rights reserved.</p>
+      
+                      </footer>
+                  `;
+              });
+      });
+    </script>
+</html>

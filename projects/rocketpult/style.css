@@ -1,0 +1,59 @@
+html, body {
+	padding: 0;
+	margin: 0;
+	/* overflow: hidden; */
+	
+	background: #000000 !important;
+	color: white;
+	display: flex;
+    flex-direction: column;
+}
+section{
+	order: 2;
+}
+#footer-container{
+	order: 3;
+}
+canvas{
+    width: 1000px !important;
+    height: 600px !important;
+    position: relative;
+    left: 10%;
+}
+html, body, canvas {
+	touch-action: none;
+	touch-action-delay: none;
+}
+
+.last-section {
+  width: 100%;
+  max-width: 1140px; /* Matches Bootstrap's container max-width for large screens */
+  margin-right: auto; 
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding: 2rem;
+  
+} 
+/*  shadow code is start from here */
+.container.last-section {
+  background-color: #f2f2f21a;
+  color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.397); /* soft white shadow for dark bg */
+  max-width: 1000px;
+  margin: 0px auto;
+  line-height: 1.7;
+  font-family: Arial, sans-serif;
+}
+.container.last-section h2 {
+  color: #e0e0e0;
+}
+.container.last-section a {
+  color: #ff4c4c;
+  text-decoration: none;
+}
+.container.last-section a:hover {
+  text-decoration: underline;
+}
